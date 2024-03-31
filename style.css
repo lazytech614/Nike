@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "helvatica";
+    src: url("./fonts/helveticanowtext-bold-demo.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content .right::-webkit-scrollbar{
+    display: none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all ease 0.3s;
+}
+
+a:hover{
+    scale: 0.95;
+    cursor: pointer;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #D0D4D5;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+}
+
+.logo img{
+    height: 100px;
+    object-fit: cover;
+}
+
+.nav-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-contents h4{
+    text-transform: uppercase;
+    font-family: "helvatica";
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.nav-icons i{
+    font-size: 1.5vw;
+}
+
+.content{
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .left{
+    height: 100%;
+    width: 40%;
+    padding: 0 4vw;
+    padding-top: 15vw;
+}
+
+.content .right{
+    height: 100%;
+    width: 60%;
+    white-space: nowrap;
+    padding-top: 180px;
+    overflow-x: auto;
+}
+
+.content .left h6{
+    font-size: 0.8vw;
+    text-transform: capitalize;
+    font-family: "helvatica";
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.47);
+}
+
+.content .left h4{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: "helvatica";
+    margin-bottom: 30px;
+}
+
+.content .left p{
+    font-size: 1vw;
+    font-family: "helvatica";
+    width: 75%;
+    color: rgba(0, 0, 0, 0.47);
+    margin-bottom: 30px;
+}
+
+button{
+    height: 50px;
+    width: 160px;
+    background-color: black;
+    color: white;
+    font-size: 1vw;
+    border: none;
+    border-radius: 40px;
+    border-top-left-radius: 0;
+    text-transform: uppercase;
+}
+
+.elem{
+    height: 420px;
+    width: 300px;
+    background-color: #ffff;
+    border-radius: 10px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.477);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.elem img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+}
+
+.top{
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    font-size: 0.8vw;
+    font-family: "helvatica";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+.bottom{
+    height: 50px;
+    width: 200px;
+    background-color: #D0D4D5;
+    color: black;
+    text-transform: capitalize;
+    font-size: 0.8vw;
+    font-family: "helvatica";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.scroll{
+    height: 50px;
+    width: 180px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    right: 4vw;
+    bottom: 80px;
+    color: white;
+    font-family: "helvatica";
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
